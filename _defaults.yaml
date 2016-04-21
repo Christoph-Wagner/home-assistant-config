@@ -1,0 +1,10 @@
+name: home
+temperature_unit: C
+time_zone: Europe/Berlin
+latitude: [LAT]
+longitude: [LONG]
+customize:
+  group.main:
+    hidden: true
+  group.room:
+    hidden: true

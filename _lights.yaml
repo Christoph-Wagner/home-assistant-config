@@ -1,0 +1,4 @@
+platform: hue
+host: PhilipsHue.cw
+allow_unreachable: true
+filename: phue.conf

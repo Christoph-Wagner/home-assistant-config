@@ -1,0 +1,11 @@
+- platform: mqtt
+  state_topic: "owntracks/cwagner/oneplusone"
+  name: "oneplusone_battery"
+  unit_of_measurement: "%"
+  value_template: '{{ value_json.batt }}'
+
+#- platform: rest # currently inactive FIND tracking
+#  resource: http://cwagnerpc.cw:8003/location/home/cwagner
+#  value_template: '{{ value_json.location }}'
+#  method: GET
+#  name: REST GET sensor

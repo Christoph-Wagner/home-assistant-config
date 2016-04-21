@@ -1,0 +1,13 @@
+main:
+  - light.floor
+  - light.pc
+  - light.spot
+room:
+  - light.pc
+  - light.spot
+all:
+  - light.floor
+  - light.pc
+  - light.spot
+  - light.bed
+  - light.kitchen

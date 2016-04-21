@@ -1,0 +1,10 @@
+- name: Home
+  latitude: [LAT]
+  longitude: [LONG]
+  radius: 100
+  icon: mdi:account-circle
+- name: Parents
+  latitude: [LAT]
+  longitude: [LONG]
+  radius: 100
+  icon: mdi:mdi:castle

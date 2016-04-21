@@ -1,0 +1,7 @@
+broker: [IP]
+port: 8883
+client_id: home-assistant-1
+keepalive: 60
+username: [USER]
+password: [PASSWORD]
+protocol: 3.1

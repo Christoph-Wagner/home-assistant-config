@@ -1,0 +1,27 @@
+- alias: 'Light on on arrival'
+  trigger:
+    - platform: state
+      entity_id: group.all_devices
+      state: 'home'
+  action:
+    service: homeassistant.turn_on
+    entity_id: group.main
+
+- alias: 'Lights off on leaving'
+  trigger:
+    platform: state
+    entity_id: group.all_devices
+    state: 'not_home'
+  action:
+    service: light.turn_off
+    entity_id: group.all
+
+- alias: 'Low Battery Notification'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.oneplusone_battery
+    below: 20
+  action:
+    service: script.turn_on
+    data:
+      name: "notifylowbattery"

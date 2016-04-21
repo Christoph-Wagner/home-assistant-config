@@ -1,0 +1,8 @@
+- name: "owntracks"
+  platform: owntracks
+  max_gps_accuracy: 100
+- name: "asus"
+  platform: asuswrt
+  host: 192.168.1.1
+  username: [USER]
+  password: [PASSWORD]

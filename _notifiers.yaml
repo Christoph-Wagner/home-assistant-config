@@ -1,0 +1,7 @@
+- name: jabber
+  platform: xmpp
+  sender: [JABBER-ID]
+  password: [PASSWORD]
+  recipient: cwagner@jabber.org
+- name: join
+  platform: join

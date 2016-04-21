@@ -1,0 +1,35 @@
+homeassistant: !include _defaults.yaml
+updater:
+history:
+conversation:
+sun:
+logbook:
+frontend:
+circadianlights:
+  lights:
+    - light.spot
+  lights_temp:
+    - light.floor
+    - light.pc
+    - light.bed
+http:
+  api_password: [PASSWORD]
+  server_port: 80
+mqtt: !include _mqtt.yaml
+weblink: !include _weblinks.yaml
+ifttt:
+  key: [KEY]
+device_tracker: !include _device-trackers.yaml
+zone: !include _zones.yaml
+notify: !include _notifiers.yaml
+light: !include _lights.yaml
+group: !include _groups.yaml
+automation: !include _automation.yaml
+sensor: !include _sensors.yaml
+script: !include _scripts.yaml
+
+#zwave:
+#  usb_path: /dev/ttyUSB0 # different for razberry
+#  config_path: /usr/local/lib/python3.4/dist-packages/libopenzwave-0.3.0b8-py3.4-linux-armv7l.egg/config
+#  polling_interval: 60000
+# https://home-assistant.io/components/zwave/
